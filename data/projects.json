@@ -1,0 +1,72 @@
+{
+  "projects": [
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "alt": "html5"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "alt": "css3"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "alt": "javascript"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "alt": "react"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      "alt": "nodejs"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      "alt": "express"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      "alt": "nextjs"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+      "alt": "php"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      "alt": "mysql"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg",
+      "alt": "sequelize"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      "alt": "tailwindcss"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+      "alt": "bootstrap"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg",
+      "alt": "vite"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "alt": "github"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+      "alt": "sass"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+      "alt": "redux"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      "alt": "postgresql"
+    }
+  ]
+}

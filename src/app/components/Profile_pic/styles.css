@@ -2,7 +2,7 @@
   background-image: radial-gradient(
     circle at center,
     transparent 50%,
-    black 65%
+    rgb(10, 10, 30) 65%
   );
 }
 
