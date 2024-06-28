@@ -68,8 +68,8 @@ export default function Home() {
         </FullpageSection>
         <FullpageSection className="flex justify-center items-center flex-col w-screen h-screen gap-10 container mx-auto">
           <h3 className="font-normal text-[40px] tracking-wide">Projects</h3>
-          <ul className="flex items-center gap-16 w-full flex-wrap justify-center">
-            {technologies.slice(0, 8).map((t, index) => {
+          <ul className="flex items-center gap-[100px] w-full flex-wrap justify-center">
+            {projects.slice(0, 8).map((t, index) => {
               console.log("t", t);
               return (
                 <li key={t.alt} className={`w-[220px] h-[220px] `}>
@@ -78,8 +78,8 @@ export default function Home() {
                     alt={t.alt}
                     className={`w-[200px] h-[200px] mx-auto rounded-md `}
                   />
-                  <h3 className="font-bold text-[20px] p-3 mt-3 text-center">
-                    Project {index + 1}
+                  <h3 className="font-bold text-[20px] py-3 mt-3 text-center">
+                    {t.name ?? "Project " + (index + 1)}
                   </h3>
                 </li>
               );
