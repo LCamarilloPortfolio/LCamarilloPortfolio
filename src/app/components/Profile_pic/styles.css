@@ -1,0 +1,21 @@
+.radial-gradient {
+  background-image: radial-gradient(
+    circle at center,
+    transparent 50%,
+    black 65%
+  );
+}
+
+@keyframes breathing {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.respirar {
+  animation: breathing 4s infinite;
+}
