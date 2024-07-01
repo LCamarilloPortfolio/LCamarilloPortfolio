@@ -2,8 +2,15 @@
   "projects": [
     {
       "name": "Barber App",
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-      "alt": "html5"
+      "src": "/images/projects/barberia.png",
+      "url": "https://barberia.it-solutions.pw/",
+      "alt": "Barbería"
+    },
+    {
+      "name": "Catálogo de Productos",
+      "src": "/images/projects/catalogo.png",
+      "url": "https://catalogo-productos-xi.vercel.app/",
+      "alt": "Catalogo"
     },
     {
       "name": "Rick and Morty",
@@ -22,58 +29,14 @@
     },
     {
       "name": "Hotel Esmeralda App",
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      "alt": "nodejs"
+      "url": "https://hotelesmeralda.netlify.app/login",
+      "src": "/images/projects/esmeralda.png",
+      "alt": "Hotel Esmeralda"
     },
     {
       "name": "Control de Mantenimientos",
       "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
       "alt": "express"
-    },
-    {
-      "name": "App Bienes Raíces",
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      "alt": "nextjs"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-      "alt": "php"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-      "alt": "mysql"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg",
-      "alt": "sequelize"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-      "alt": "tailwindcss"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-      "alt": "bootstrap"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg",
-      "alt": "vite"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-      "alt": "github"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-      "alt": "sass"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-      "alt": "redux"
-    },
-    {
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-      "alt": "postgresql"
     }
   ]
 }

@@ -7,6 +7,7 @@ import Fullpage, {
   FullpageSection,
   FullpageNavigation,
 } from "@ap.cx/react-fullpage";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -73,14 +74,20 @@ export default function Home() {
               console.log("t", t);
               return (
                 <li key={t.alt} className={`w-[220px] h-[220px] `}>
-                  <img
-                    src={t.src}
-                    alt={t.alt}
-                    className={`w-[200px] h-[200px] mx-auto rounded-md `}
-                  />
-                  <h3 className="font-bold text-[20px] py-3 mt-3 text-center">
-                    {t.name ?? "Project " + (index + 1)}
-                  </h3>
+                  <Link
+                    href={t.url ?? "#"}
+                    alt={"url" + t.name}
+                    target="_blank"
+                  >
+                    <img
+                      src={t.src}
+                      alt={t.alt}
+                      className={`w-[200px] h-[200px] mx-auto rounded-md `}
+                    />
+                    <h3 className="font-bold text-[20px] py-3 mt-3 text-center">
+                      {t.name ?? "Project " + (index + 1)}
+                    </h3>
+                  </Link>
                 </li>
               );
             })}
