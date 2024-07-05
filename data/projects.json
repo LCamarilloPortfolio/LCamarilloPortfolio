@@ -16,8 +16,15 @@
     {
       "name": "Hotel Esmeralda App",
       "url": "https://hotelesmeralda.netlify.app/login",
-      "src": "/images/projects/esmeralda.png",
+      "src": "/images/projects/hotel2.png",
       "alt": "Hotel Esmeralda"
+    },
+
+    {
+      "name": "Bienes Raíces App",
+      "url": "https://bienes-raices.it-solutions.pw/",
+      "src": "/images/projects/bienes-raices.png",
+      "alt": "Bienes Raíces App"
     }
   ]
 }
