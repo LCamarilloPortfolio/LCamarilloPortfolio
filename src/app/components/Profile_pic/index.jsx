@@ -4,7 +4,7 @@ import "./styles.css";
 
 const Profile_pic = () => {
   return (
-    <div className="relative respirar self-start">
+    <div className="relative respirar md:self-start self-center">
       <Image
         className="z-[0]"
         src={profile_pic}

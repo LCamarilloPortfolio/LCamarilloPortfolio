@@ -4,27 +4,73 @@
       "name": "Barber App",
       "src": "/images/projects/barberia.png",
       "url": "https://barberia.it-solutions.pw/",
-      "alt": "Barbería"
+      "alt": "Barbería",
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "PostCSS",
+        "Active Record"
+      ],
+      "description": [
+        "Barber App that allows User's register, login, recover account and book services.",
+        "The Administrator Role allows see and cancel bookings, and manage services"
+      ]
     },
     {
       "name": "Catálogo de Productos",
       "src": "/images/projects/catalogo.png",
       "url": "https://catalogo-productos-xi.vercel.app/",
-      "alt": "Catalogo"
+      "alt": "Catalogo",
+      "description": [
+        "Alioccsa's Company Product Catalog allows users to see the site between English and Spanish language and changes the page content dynamically"
+      ],
+      "technologies": ["Next.js", "Tailwind", "React"]
     },
 
     {
       "name": "Hotel Esmeralda App",
       "url": "https://hotelesmeralda.netlify.app/login",
       "src": "/images/projects/hotel2.png",
-      "alt": "Hotel Esmeralda"
+      "alt": "Hotel Esmeralda",
+      "description": [
+        "The Hotel Esmeralda App allows users to register, log in, book, contract services, and pay the cart price.",
+        "The Administrator Role allows see and cancel bookings, and manage services and rooms"
+      ],
+      "technologies": [
+        "Vite",
+        "Postgres",
+        "React",
+        "Sequelize",
+        "HTML5",
+        "Tailwind",
+        "JWT",
+        "REST Api's",
+        "Clerk",
+        "Stripe"
+      ]
     },
 
     {
       "name": "Bienes Raíces App",
       "url": "https://bienes-raices.it-solutions.pw/",
       "src": "/images/projects/bienes-raices.png",
-      "alt": "Bienes Raíces App"
+      "alt": "Bienes Raíces App",
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "PostCSS",
+        "Active Record"
+      ],
+      "description": [
+        "Bienes Raíces App allows User's register, login, recover account and book services.",
+        "The Administrator Role allows see and cancel bookings, and manage services"
+      ]
     }
   ]
 }
