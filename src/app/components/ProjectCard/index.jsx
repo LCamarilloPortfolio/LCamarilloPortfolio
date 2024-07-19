@@ -43,8 +43,8 @@ const ProjectCard = ({
               />
             </div>
             <div className="self-start md:mt-20 h-[90%] xl:h-[320px] w-full overflow-scroll">
-              <ul>
-                <Item title={"Technologies"} value={technologies} cols={3} />
+              <ul className="grid grid-col-3">
+                <Item title={"Technologies"} value={technologies} />
                 <Item title={"Description"} value={description} />
               </ul>
               <div className="absolute bottom-10 right-16 text-2xl text-blue-800">
