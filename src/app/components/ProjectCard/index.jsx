@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import Item from "./Item";
+import Boton from "../Boton";
 
 const ProjectCard = ({
   technologies = "",
@@ -54,7 +55,7 @@ const ProjectCard = ({
                   target="_blank"
                   className="flex flex-col rounded-lg"
                 >
-                  Go to App ➡️
+                  <Boton text="Go to App ➡️" />
                 </Link>
               </div>
             </div>
