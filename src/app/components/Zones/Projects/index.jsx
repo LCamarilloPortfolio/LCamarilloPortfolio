@@ -19,20 +19,24 @@ const Projects = () => {
   return (
     <>
       <h3 className="font-normal text-[40px] tracking-wide">Projects</h3>
-      <ul className="flex items-center gap-[100px] w-full flex-wrap justify-center">
+      <ul className="flex items-center gap-5 w-full flex-wrap justify-center">
         {projects.projects.slice(0, 8).map((t, index) => {
           console.log("t", t);
           return (
             <li key={t.alt}>
               <div
                 onClick={() => showProjectCard(t)}
-                className="flex flex-col transition-all duration-500 hover:scale-105 rounded-lg"
+                className="flex flex-col transition-all duration-500 hover:scale-105 rounded-lg w-[240px] h-[300px]"
               >
-                <img
-                  src={t.src}
-                  alt={t.alt}
+                <div
                   className={`w-[240px] h-[240px] mx-auto shadow-md rounded-xl shadow-slate-200 border border-slate-100`}
-                />
+                >
+                  <img
+                    src={t.src}
+                    alt={t.alt}
+                    className={`w-full h-full mx-auto shadow-md rounded-xl shadow-slate-200 border border-slate-100`}
+                  />
+                </div>
                 <h3 className="font-bold text-[20px] py-3 mt-3 text-center">
                   {t.name ?? "Project " + (index + 1)}
                 </h3>

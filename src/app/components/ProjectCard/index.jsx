@@ -39,7 +39,7 @@ const ProjectCard = ({
                 src={src}
                 width={400}
                 height={400}
-                className="rounded-lg border-2 border-blue-600/50 w-full md:w-[400px]"
+                className="rounded-lg border-2 border-blue-600/50 w-full"
               />
             </div>
             <div className="self-start md:mt-20 h-[90%] xl:h-[320px] w-full overflow-scroll">
