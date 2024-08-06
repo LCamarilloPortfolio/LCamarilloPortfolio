@@ -5,7 +5,7 @@ import Boton from "../Boton";
 const Cerrar = (props) => {
   return (
     <Boton {...props}>
-      <IoMdCloseCircle />
+      <IoMdCloseCircle size="30" />
     </Boton>
   );
 };

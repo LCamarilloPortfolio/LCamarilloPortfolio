@@ -4,6 +4,7 @@ import Link from "next/link";
 import Item from "./Item";
 import Boton from "../Boton";
 import Cerrar from "../Cerrar";
+import { MdArrowCircleRight } from "react-icons/md";
 
 const ProjectCard = ({
   technologies = "",
@@ -44,7 +45,11 @@ const ProjectCard = ({
             </div>
             <div className="self-start md:mt-20 h-[90%] xl:h-[320px] w-full overflow-scroll">
               <ul className="grid grid-col-3">
-                <Item title={"Technologies"} value={technologies} />
+                <Item
+                  title={"Technologies"}
+                  value={technologies}
+                  lista={true}
+                />
                 <Item title={"Description"} value={description} />
               </ul>
               <div className="absolute bottom-10 right-16 text-2xl text-blue-800">
@@ -54,7 +59,13 @@ const ProjectCard = ({
                   target="_blank"
                   className="flex flex-col rounded-lg"
                 >
-                  <Boton text="Go to App ➡️" />
+                  <Boton
+                    text={
+                      <div className="flex gap-2 items-center">
+                        Go to App <MdArrowCircleRight size={"30"} />
+                      </div>
+                    }
+                  />
                 </Link>
               </div>
             </div>
