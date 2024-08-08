@@ -58,9 +58,9 @@ const Principal = () => {
           </Link>
         </motion.div>
       </div>
-      <div>
+      <div className="space-y-5">
         <motion.h3
-          className="relative text-center md:text-right font-normal text-[40px] tracking-wide opacity-0 right-24"
+          className="relative text-center md:text-right font-normal leading-7 md:leading-[50px] text-xl md:text-[40px] tracking-wide opacity-0 right-24"
           animate={{ right: 0, opacity: 1 }}
           exit={{ right: "300px", opacity: 0 }}
           transition={{ duration: 1, ease: "backOut", delay: 0.4 }}
@@ -73,12 +73,12 @@ const Principal = () => {
         <div className="flex items-center gap-5 flex-col md:flex-row">
           <Profile_pic />
           <motion.div
-            className="relative text-[26px] text-center md:text-right font-light w-[500px] top-24 opacity-0"
+            className="relative texl-xl md:text-[26px] text-center md:text-right font-light w-[95%] top-24 opacity-0"
             animate={{ top: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "backOut" }}
           >
             Developer Junior who loves the tech industry. Persistent and
-            adaptable..
+            adaptable.
           </motion.div>
         </div>
       </div>

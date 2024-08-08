@@ -10,7 +10,7 @@ import Projects from "./components/Zones/Projects";
 
 export default function Home() {
   return (
-    <Fullpage className="font-sm md:font-xl">
+    <Fullpage>
       {/* <FullpageNavigation
         itemStyle={{
           backgroundColor: "white",
@@ -30,7 +30,7 @@ export default function Home() {
         >
           <Technologies />
         </FullpageSection>
-        <FullpageSection className="flex justify-center p-5 items-center flex-col w-screen h-screen gap-10 container mx-auto">
+        <FullpageSection className="flex justify-center p-5 items-center flex-col w-screen h-screen gap-10 container mx-auto overflow-y-auto">
           <Projects />
         </FullpageSection>
       </FullPageSections>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Technologies = () => {
   return (
     <div className="flex justify-center items-center flex-col w-screen h-screen gap-10 container mx-auto">
-      <h3 className="font-normal text-[40px] tracking-wide">
+      <h3 className="font-normal text-xl md:text-[40px] tracking-wide">
         Domained Technologies:
       </h3>
       <ul className="flex items-center gap-5 w-full md:w-[700px] flex-wrap justify-center">
