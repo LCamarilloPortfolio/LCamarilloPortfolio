@@ -1,5 +1,6 @@
 import React from "react";
 import technologies from "../../../../../data/technologies.json";
+import { motion } from "framer-motion";
 
 const Technologies = () => {
   return (
@@ -9,11 +10,16 @@ const Technologies = () => {
       </h3>
       <ul className="flex items-center gap-5 w-full md:w-[700px] flex-wrap justify-center">
         {technologies.technologies.map((t) => {
-          console.log("t", t);
           return (
-            <li
+            <motion.li
+              whileHover={{
+                scale: 1.1,
+                backgroundColor: "rgb(30, 29, 29)",
+                shadow: "2px 20px rgb(255,255,255)",
+              }}
+              whileTap={{ scale: 1, backgroundColor: "rgb(50,50,50)" }}
               key={t.alt}
-              className={`w-[80px] h-[80px] border border-white/10 shadow-md shadow-gray-600 flex items-center justify-center rounded-full`}
+              className={`w-[80px] h-[80px] bg-slate-800 border border-white/10 shadow-md shadow-gray-600 flex items-center justify-center rounded-full`}
             >
               <img
                 src={t.src}
@@ -24,7 +30,7 @@ const Technologies = () => {
                     : "invert-1"
                 }`}
               />
-            </li>
+            </motion.li>
           );
         })}
       </ul>
