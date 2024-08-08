@@ -3,17 +3,21 @@ import profile_pic from "../../../../public/images/profile.png";
 import { motion } from "framer-motion";
 import "./styles.css";
 
-const Profile_pic = () => {
+const Profile_pic = ({ isOnScreen }) => {
   return (
     <motion.div
-      className="relative md:self-start self-center top-11 opacity-0"
+      className="relative md:self-start self-center opacity-0"
       layout
-      animate={{ top: "0px", opacity: 1 }}
+      whileHover={{ scale: 1.1 }}
+      animate={{ top: isOnScreen ? 0 : "-100px", opacity: isOnScreen ? 1 : 0 }}
       transition={{
         duration: 1,
+        opacity: {
+          duration: 2,
+        },
         ease: "backOut",
       }}
-      whileTap={{ scale: 1.1 }}
+      whileTap={{ scale: 1 }}
     >
       <Image
         className="z-[0]"

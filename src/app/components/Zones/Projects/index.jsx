@@ -21,7 +21,6 @@ const Projects = () => {
       <h3 className="font-normal text-[40px] tracking-wide">Projects</h3>
       <ul className="flex items-center gap-5 w-full flex-wrap justify-center">
         {projects.projects.slice(0, 8).map((t, index) => {
-          console.log("t", t);
           return (
             <li key={t.alt}>
               <div

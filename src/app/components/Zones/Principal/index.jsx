@@ -1,18 +1,22 @@
-import React from "react";
 import Profile_pic from "../../Profile_pic";
 import WhatsApp from "../../Icons/WhatsAppIcon";
 import LinkedIn from "../../Icons/LinkedInIcon";
 import Github from "../../Icons/GithubIcon";
 import { motion } from "framer-motion";
+import { forwardRef } from "react";
 import Link from "next/link";
 
-const Principal = () => {
+const Principal = forwardRef(({ isOnScreen = false }, ref) => {
   return (
-    <>
-      <div className="absolute top-10 right-10 flex gap-7">
+    <div ref={ref} className="h-screen flex items-center justify-center">
+      <div className="absolute top-[100px] right-10 flex gap-7">
         <motion.div
+          whileHover={{ scale: 1.1 }}
           className="opacity-0 relative top-[-100px]"
-          animate={{ top: 0, opacity: 1 }}
+          animate={{
+            top: isOnScreen ? 0 : "-100px",
+            opacity: isOnScreen ? 1 : 0,
+          }}
           transition={{ duration: 1, ease: "backOut" }}
         >
           <Link
@@ -28,9 +32,13 @@ const Principal = () => {
           </Link>
         </motion.div>
         <motion.div
+          whileHover={{ scale: 1.1 }}
           className="opacity-0 relative top-[-100px]"
-          animate={{ top: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "backOut" }}
+          animate={{
+            top: isOnScreen ? 0 : "-100px",
+            opacity: isOnScreen ? 1 : 0,
+          }}
+          transition={{ duration: 1, ease: "backOut", delay: 0.2 }}
         >
           <Link
             href="https://www.linkedin.com/in/luis-alberto-camarillo-flores-a95b81271"
@@ -45,9 +53,13 @@ const Principal = () => {
           </Link>
         </motion.div>
         <motion.div
+          whileHover={{ scale: 1.1 }}
           className="opacity-0 relative top-[-100px]"
-          animate={{ top: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "backOut", delay: 0.2 }}
+          animate={{
+            top: isOnScreen ? 0 : "-100px",
+            opacity: isOnScreen ? 1 : 0,
+          }}
+          transition={{ duration: 1, ease: "backOut", delay: 0.4 }}
         >
           <Link
             href={"https://wa.me/525563714643"}
@@ -60,8 +72,11 @@ const Principal = () => {
       </div>
       <div className="space-y-5">
         <motion.h3
-          className="relative text-center md:text-right font-normal leading-7 md:leading-[50px] text-xl md:text-[40px] tracking-wide opacity-0 right-24"
-          animate={{ right: 0, opacity: 1 }}
+          className="relative text-center md:text-right font-normal leading-7 md:leading-[50px] text-xl md:text-[40px] tracking-wide opacity-0"
+          animate={{
+            right: isOnScreen ? 0 : "100px",
+            opacity: isOnScreen ? 1 : 0,
+          }}
           exit={{ right: "300px", opacity: 0 }}
           transition={{ duration: 1, ease: "backOut", delay: 0.4 }}
         >
@@ -71,10 +86,13 @@ const Principal = () => {
           </span>
         </motion.h3>
         <div className="flex items-center gap-5 flex-col md:flex-row">
-          <Profile_pic />
+          <Profile_pic isOnScreen={isOnScreen} />
           <motion.div
             className="relative texl-xl md:text-[26px] text-center md:text-right font-light w-[95%] top-24 opacity-0"
-            animate={{ top: 0, opacity: 1 }}
+            animate={{
+              top: isOnScreen ? 0 : "-100px",
+              opacity: isOnScreen ? 1 : 0,
+            }}
             transition={{ duration: 1, ease: "backOut" }}
           >
             Developer Junior who loves the tech industry. Persistent and
@@ -82,8 +100,8 @@ const Principal = () => {
           </motion.div>
         </div>
       </div>
-    </>
+    </div>
   );
-};
+});
 
 export default Principal;
