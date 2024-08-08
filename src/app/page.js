@@ -10,7 +10,7 @@ import Projects from "./components/Zones/Projects";
 
 export default function Home() {
   return (
-    <Fullpage>
+    <Fullpage className="font-sm md:font-xl">
       {/* <FullpageNavigation
         itemStyle={{
           backgroundColor: "white",
