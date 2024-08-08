@@ -2,7 +2,10 @@ import { forwardRef, useEffect } from "react";
 import technologies from "../../../../../data/technologies.json";
 import { motion } from "framer-motion";
 
-const Technologies = forwardRef(({ isOnScreen = false }, ref) => {
+const Technologies = forwardRef(function RefTechnologies(
+  { isOnScreen = false },
+  ref
+) {
   useEffect(() => {
     console.log("isOnScreen", isOnScreen, ref);
   }, [isOnScreen, ref]);

@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 import { forwardRef } from "react";
 import Link from "next/link";
 
-const Principal = forwardRef(({ isOnScreen = false }, ref) => {
+const Principal = forwardRef(function RefPrincipal(
+  { isOnScreen = false },
+  ref
+) {
   return (
     <div ref={ref} className="h-screen flex items-center justify-center">
       <div className="absolute top-[100px] right-10 flex gap-7">
