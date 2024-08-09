@@ -96,10 +96,10 @@ const Principal = forwardRef(function RefPrincipal(
               top: isOnScreen ? 0 : "-100px",
               opacity: isOnScreen ? 1 : 0,
             }}
-            transition={{ duration: 1, ease: "backOut" }}
+            transition={{ type: "tween", duration: 1, ease: "backOut" }}
           >
-            Developer Junior who loves the tech industry. Persistent and
-            adaptable.
+            Developer Junior who loves the tech industry. <br />
+            Persistent and adaptable.
           </motion.div>
         </div>
       </div>

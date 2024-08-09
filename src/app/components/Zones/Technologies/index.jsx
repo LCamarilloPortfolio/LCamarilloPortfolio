@@ -31,15 +31,19 @@ const Technologies = forwardRef(function RefTechnologies(
                 animate={{
                   borderColor: !isOnScreen
                     ? "rgb(30,40,59)"
-                    : "rgb(42, 201, 95)",
+                    : [
+                        "rgb(30,40,59)",
+                        "rgb(33, 255, 107)",
+                        "rgb(39, 155, 77)",
+                      ],
                   boxShadow: !isOnScreen
-                    ? "5px 5px 20px 10px rgba(0, 0, 0, 0.2)"
-                    : "5px 5px 20px 10px rgba(30, 214, 100, 0.4)",
+                    ? "5px 5px 20px 7px rgba(0, 0, 0, 0.2)"
+                    : "5px 5px 20px 7px rgba(30, 214, 100, 0.4)",
                   scale: !isOnScreen ? 1.2 : 1,
                 }}
                 transition={{
                   borderColor: {
-                    type: "spring",
+                    type: "tween",
                     stiffness: 20,
                     duration: 0.5,
                     delay: !isOnScreen ? 0 : 0.2 * index,
@@ -52,10 +56,13 @@ const Technologies = forwardRef(function RefTechnologies(
                     type: "spring",
                     stiffness: 30,
                     duration: 0.5,
-                    damping: 7,
                   },
                 }}
-                whileTap={{ scale: 1, backgroundColor: "rgb(50,50,50)" }}
+                whileTap={{
+                  scale: 1,
+                  backgroundColor: "rgb(24, 22, 22)",
+                  transition: { ease: "easeInOut" },
+                }}
                 key={t.alt}
                 className={`w-[80px] h-[80px] border-2 shadow-lg shadow-[rgb(42,201,95)] flex items-center justify-center rounded-full select-none`}
               >
