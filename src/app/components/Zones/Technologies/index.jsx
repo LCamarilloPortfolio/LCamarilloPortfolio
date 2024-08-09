@@ -24,7 +24,6 @@ const Technologies = forwardRef(function RefTechnologies(
               <motion.li
                 whileHover={{
                   scale: 1.2,
-                  backgroundColor: "rgb(30, 29, 29)",
                   transition: {
                     scale: { duration: 0.2, delay: 0, ease: "easeInOut" },
                   },
@@ -35,7 +34,7 @@ const Technologies = forwardRef(function RefTechnologies(
                     : "rgb(42, 201, 95)",
                   boxShadow: !isOnScreen
                     ? "5px 5px 20px 10px rgba(0, 0, 0, 0.2)"
-                    : "5px 5px 20px 10px rgba(30, 214, 100, 0.2)",
+                    : "5px 5px 20px 10px rgba(30, 214, 100, 0.4)",
                   scale: !isOnScreen ? 1.2 : 1,
                 }}
                 transition={{
