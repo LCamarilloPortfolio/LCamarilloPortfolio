@@ -23,29 +23,42 @@ const Technologies = forwardRef(function RefTechnologies(
             return (
               <motion.li
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.2,
                   backgroundColor: "rgb(30, 29, 29)",
                   transition: {
                     scale: { duration: 0.2, delay: 0, ease: "easeInOut" },
                   },
                 }}
                 animate={{
-                  borderColor: !isOnScreen ? "rgb(30,40,59)" : "rgb(30,90,50)",
-                  scale: !isOnScreen ? 1 : 1.2,
+                  borderColor: !isOnScreen
+                    ? "rgb(30,40,59)"
+                    : "rgb(42, 201, 95)",
+                  boxShadow: !isOnScreen
+                    ? "5px 5px 20px 10px rgba(0, 0, 0, 0.2)"
+                    : "5px 5px 20px 10px rgba(30, 214, 100, 0.2)",
+                  scale: !isOnScreen ? 1.2 : 1,
                 }}
                 transition={{
                   borderColor: {
+                    type: "spring",
+                    stiffness: 20,
+                    duration: 0.5,
+                    delay: !isOnScreen ? 0 : 0.2 * index,
+                  },
+                  boxShadow: {
                     duration: 0.5,
                     delay: !isOnScreen ? 0 : 0.2 * index,
                   },
                   scale: {
+                    type: "spring",
+                    stiffness: 30,
                     duration: 0.5,
                     damping: 7,
                   },
                 }}
                 whileTap={{ scale: 1, backgroundColor: "rgb(50,50,50)" }}
                 key={t.alt}
-                className={`w-[80px] h-[80px] border-2 shadow-lg shadow-gray-600 flex items-center justify-center rounded-full select-none`}
+                className={`w-[80px] h-[80px] border-2 shadow-lg shadow-[rgb(42,201,95)] flex items-center justify-center rounded-full select-none`}
               >
                 <img
                   src={t.src}
