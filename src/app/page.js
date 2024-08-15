@@ -29,7 +29,7 @@ export default function Home() {
           zIndex: "150",
         }}
       /> */}
-      <div className="flex justify-center p-5 items-center flex-col max-w-screen max-h-screen gap-5 container mx-auto">
+      <div className="flex justify-center p-3 md:p-5 items-center flex-col max-w-screen max-h-screen gap-5 container mx-auto">
         <Principal ref={ref1} isOnScreen={isOnScreen1} />
       </div>
       <div className="bg-[rgb(10,10,20)] w-screen h-full">
