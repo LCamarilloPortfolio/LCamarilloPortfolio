@@ -5,7 +5,7 @@ const Tooltip = ({ children, toolTipText, selected, onClick }) => {
   return (
     <div
       className={`tooltip transition-all duration-200 ${
-        selected ? "scale-105" : ""
+        selected ? "scale-120" : ""
       }`}
       onClick={() => onClick()}
     >
