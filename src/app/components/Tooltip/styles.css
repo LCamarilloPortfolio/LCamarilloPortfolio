@@ -22,10 +22,10 @@
   font-weight: bold;
   z-index: 1;
   bottom: 150%;
-  left: 100%;
+  left: 50%;
   margin-left: -60px;
 }
-
+/* 
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -35,7 +35,7 @@
   border-width: 5px;
   border-style: solid;
   border-color: rgba(10, 10, 10, 0.8) transparent transparent transparent;
-}
+} */
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
