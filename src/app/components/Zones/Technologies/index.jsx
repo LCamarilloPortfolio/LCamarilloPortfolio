@@ -8,6 +8,7 @@ const Technologies = forwardRef(function RefTechnologies(
   ref
 ) {
   const [animacion, setAnimacion] = useState(true);
+  const [selected, setSelected] = useState(null);
 
   useEffect(() => {
     setAnimacion(isOnScreen);
@@ -29,7 +30,12 @@ const Technologies = forwardRef(function RefTechnologies(
         <ul className="flex items-center gap-7 w-full md:w-[700px] flex-wrap justify-center">
           {technologies.technologies.map((t, index) => {
             return (
-              <Tooltip key={t.alt} toolTipText={t.alt?.toUpperCase()}>
+              <Tooltip
+                key={t.alt}
+                toolTipText={t.alt?.toUpperCase()}
+                selected={selected === t.alt}
+                onClick={() => setSelected(t.alt)}
+              >
                 <motion.li
                   whileHover={{
                     scale: 1.2,

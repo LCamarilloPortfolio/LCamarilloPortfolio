@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-const Tooltip = ({ children, toolTipText }) => {
-  const [selected, setSelected] = useState(false);
+const Tooltip = ({ children, toolTipText, selected, onClick }) => {
   return (
     <div
       className={`tooltip transition-all duration-200 ${
         selected ? "scale-105" : ""
       }`}
-      onClick={() => setSelected((prev) => !prev)}
+      onClick={() => onClick()}
     >
       {children}
       <span className="tooltiptext">{toolTipText}</span>
