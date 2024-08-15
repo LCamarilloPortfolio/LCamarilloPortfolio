@@ -18,7 +18,7 @@ export default function Home() {
   const ref3 = useRef(null);
   const isOnScreen3 = useOnScreen(ref3);
   return (
-    <Fullpage>
+    <div>
       {/* <FullpageNavigation
         itemStyle={{
           backgroundColor: "white",
@@ -29,17 +29,15 @@ export default function Home() {
           zIndex: "150",
         }}
       /> */}
-      <FullPageSections>
-        <FullpageSection className="flex justify-center p-5 items-center flex-col max-w-screen max-h-screen gap-5 container mx-auto">
-          <Principal ref={ref1} isOnScreen={isOnScreen1} />
-        </FullpageSection>
-        <FullpageSection className="bg-[rgb(10,10,20)] w-screen h-full">
-          <Technologies ref={ref2} isOnScreen={isOnScreen2} />
-        </FullpageSection>
-        <FullpageSection className="flex justify-center p-5 items-center flex-col max-w-screen max-h-screen gap-10 container mx-auto overflow-y-auto">
-          <Projects ref={ref3} isOnScreen={isOnScreen3} />
-        </FullpageSection>
-      </FullPageSections>
-    </Fullpage>
+      <div className="flex justify-center p-5 items-center flex-col max-w-screen max-h-screen gap-5 container mx-auto">
+        <Principal ref={ref1} isOnScreen={isOnScreen1} />
+      </div>
+      <div className="bg-[rgb(10,10,20)] w-screen h-full">
+        <Technologies ref={ref2} isOnScreen={isOnScreen2} />
+      </div>
+      <div className="flex justify-center p-5 items-center flex-col max-w-screen max-h-screen gap-10 container mx-auto overflow-y-auto">
+        <Projects ref={ref3} isOnScreen={isOnScreen3} />
+      </div>
+    </div>
   );
 }
