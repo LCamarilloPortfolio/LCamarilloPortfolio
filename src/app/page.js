@@ -37,7 +37,7 @@ export default function Home() {
           <Technologies ref={ref2} isOnScreen={isOnScreen2} />
         </FullpageSection>
         <FullpageSection className="flex justify-center p-5 items-center flex-col max-w-screen max-h-screen gap-10 container mx-auto overflow-y-auto">
-          <Projects />
+          <Projects ref={ref3} isOnScreen={isOnScreen3} />
         </FullpageSection>
       </FullPageSections>
     </Fullpage>
