@@ -29,7 +29,7 @@ const Technologies = forwardRef(function RefTechnologies(
         <ul className="flex items-center gap-7 w-full md:w-[700px] flex-wrap justify-center">
           {technologies.technologies.map((t, index) => {
             return (
-              <Tooltip toolTipText={t.alt?.toUpperCase()}>
+              <Tooltip key={t.alt} toolTipText={t.alt?.toUpperCase()}>
                 <motion.li
                   whileHover={{
                     scale: 1.2,
@@ -95,7 +95,6 @@ const Technologies = forwardRef(function RefTechnologies(
                       setAnimacion(false);
                     }
                   }}
-                  key={t.alt}
                   className={`w-[80px] h-[80px] border-2 shadow-lg shadow-[rgb(42,201,95)] flex items-center justify-center rounded-full select-none`}
                 >
                   <img
