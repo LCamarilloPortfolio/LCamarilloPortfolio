@@ -5,7 +5,9 @@ const Tooltip = ({ children, toolTipText }) => {
   const [selected, setSelected] = useState(false);
   return (
     <div
-      className={`tooltip ${selected ? "scale-105" : ""}`}
+      className={`tooltip transition-all duration-200 ${
+        selected ? "scale-105" : ""
+      }`}
       onClick={() => setSelected((prev) => !prev)}
     >
       {children}
