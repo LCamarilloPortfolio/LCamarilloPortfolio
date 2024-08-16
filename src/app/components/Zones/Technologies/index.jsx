@@ -14,20 +14,16 @@ const Technologies = forwardRef(function RefTechnologies(
     setAnimacion(isOnScreen);
   }, [isOnScreen]);
 
-  useEffect(() => {
-    console.log("animacion", animacion);
-  }, [animacion]);
-
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center ">
       <div
         ref={ref}
-        className="relative flex justify-center items-center flex-col gap-10 container h-[90vh]"
+        className="relative flex justify-center items-center flex-col gap-10"
       >
         <h3 className="font-normal text-xl md:text-[40px] tracking-wide">
           Domained Technologies:
         </h3>
-        <ul className="flex items-center gap-7 w-full md:w-[700px] flex-wrap justify-center">
+        <ul className="flex items-center gap-7 w-full  flex-wrap justify-center">
           {technologies.technologies.map((t, index) => {
             return (
               <Tooltip

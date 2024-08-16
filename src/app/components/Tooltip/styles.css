@@ -39,5 +39,6 @@
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  scale: 1.1;
   opacity: 1;
 }

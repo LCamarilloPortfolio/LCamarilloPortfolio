@@ -12,7 +12,7 @@ const Principal = forwardRef(function RefPrincipal(
 ) {
   return (
     <div ref={ref} className="h-screen flex items-center justify-center">
-      <div className="absolute top-3 md:top-[100px] right-10 flex gap-7">
+      <div className="absolute top-[30px] md:top-[100px] right-10 flex gap-7">
         <motion.div
           whileHover={{ scale: 1.1 }}
           className="opacity-0 relative top-[-100px]"
