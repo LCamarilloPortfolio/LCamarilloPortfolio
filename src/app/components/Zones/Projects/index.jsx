@@ -19,7 +19,10 @@ const Projects = forwardRef(function RefProjects({ isOnScreen = false }, ref) {
   };
   return (
     <>
-      <div ref={ref} className="relative">
+      <div
+        ref={ref}
+        className="relative flex items-center justify-center gap-10 flex-col"
+      >
         <h3 className="font-normal text-[40px] tracking-wide">Projects</h3>
         <ul className="flex items-center gap-5 w-full flex-wrap justify-center">
           {projects.projects.slice(0, 8).map((t, index) => {
