@@ -22,7 +22,7 @@ const Technologies = forwardRef(function RefTechnologies(
       <h3 className="font-normal text-xl md:text-[40px] tracking-wide">
         Domained Technologies:
       </h3>
-      <ul className="flex items-center gap-7 w-full  flex-wrap justify-center">
+      <ul className="flex items-center gap-7 w-full flex-wrap justify-center md:w-[800px] max-md:w-[95%]">
         {technologies.technologies.map((t, index) => {
           return (
             <Tooltip

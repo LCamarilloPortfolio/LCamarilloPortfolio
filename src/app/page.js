@@ -32,10 +32,10 @@ export default function Home() {
       <div className="flex justify-center p-3 md:p-5 items-center flex-col max-w-screen max-h-screen gap-5 container mx-auto">
         <Principal ref={ref1} isOnScreen={isOnScreen1} />
       </div>
-      <div className="bg-[rgb(10,10,20)] w-full min-h-screen  p-3 md:p-5 flex items-center justify-between">
+      <div className="bg-[rgb(10,10,20)] w-full min-h-screen p-3 md:p-5 flex items-center justify-center">
         <Technologies ref={ref2} isOnScreen={isOnScreen2} />
       </div>
-      <div className="relative flex justify-center p-3 md:p-5items-center flex-col w-full gap-10 container mx-auto">
+      <div className="relative flex justify-center p-3 md:p-5 items-center overflow-y-auto flex-col w-full gap-10 container mx-auto min-h-screen">
         <Projects ref={ref3} isOnScreen={isOnScreen3} />
       </div>
     </div>
